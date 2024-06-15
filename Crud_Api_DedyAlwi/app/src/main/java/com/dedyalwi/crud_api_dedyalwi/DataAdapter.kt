@@ -17,8 +17,7 @@ class DataAdapter(val data: List<DataItem>? , private val click: onClickItem) :
         }
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyHolder {
-        binding = ItemDataBinding.inflate(
-            LayoutInflater.from(parent.context), parent,
+        binding = ItemDataBinding.inflate(LayoutInflater.from(parent.context), parent,
             false)
         return MyHolder(binding)
     }

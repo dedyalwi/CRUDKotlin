@@ -3,6 +3,7 @@ package com.dedyalwi.crud_api_dedyalwi
 import android.util.Log
 import retrofit2.Call
 import retrofit2.Response
+
 class Presenter(val crudView: MainActivity) {
     //Fungsi GetData
     fun getData(){

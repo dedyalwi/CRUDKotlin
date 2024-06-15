@@ -22,7 +22,7 @@ object NetworkConfig {
     //Retrofit
     fun getRetrofit(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("http:/192.168.149.150/server_api/index.php/ServerApi/")
+            .baseUrl("http:/10.0.2.2/server_api/index.php/ServerApi/")
             .client(getInterceptor())
             .addConverterFactory(GsonConverterFactory.create())
             .build()
